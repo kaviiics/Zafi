@@ -36,6 +36,14 @@ public:
         std::println("    A B C D E F G H");
     }
 	
+    void SetSquare(int square) {
+        board |= (1ULL << square);
+    }   
+
+    void PopSquare(int square) {
+        board &= ~(1ULL << square);
+    }
+
     operator u64() {
 		return board;
 	}

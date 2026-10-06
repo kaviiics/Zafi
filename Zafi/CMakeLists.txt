@@ -3,7 +3,7 @@
 #
 
 # Add source to this project's executable.
-add_executable (Zafi "main.cpp")
+add_executable (Zafi "main.cpp" "board.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Zafi PROPERTY CXX_STANDARD 23)

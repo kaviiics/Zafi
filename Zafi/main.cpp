@@ -2,14 +2,12 @@
 #include <iostream>
 #include "types.h"
 #include "bitboard.h"
+#include "board.h"
 
 int main()
 {
-	//std::print("Mark szeretnel velem szexelni?");
-
-    Bitboard seggembbolhugyjonki;
-
-    seggembbolhugyjonki.Print();
-
-    // u64 szargomboc = seggembbolhugyjonki;
+    Board board;
+    
+    board.SetPiece(Pawn, a2, White);
+    board.Print();
 }
